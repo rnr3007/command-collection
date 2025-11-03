@@ -9,7 +9,7 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
-$username=$1
+username=$1
 
 if cat /etc/passwd | grep -q $username; then
     echo "User $username already exists."
