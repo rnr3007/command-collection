@@ -2,7 +2,7 @@
 # How to run:
 # sudo ./os-user-add.sh <username>
 
-# This operation requires superuser privileges
+# This operation requires superuser privileges.
 
 if [ "$EUID" -ne 0 ]; then
   echo "Please run as root or use sudo"
