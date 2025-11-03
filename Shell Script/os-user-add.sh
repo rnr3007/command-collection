@@ -14,7 +14,7 @@ username=$1
 if cat /etc/passwd | grep -q $username; then
     echo "User $username already exists."
 else
-    useradd -m -s (which zsh) $username
+    useradd -m -s $(which zsh) $username
     if [ $? -eq 0 ]; then
         echo "User $username has been added successfully."
 

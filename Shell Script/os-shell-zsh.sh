@@ -11,4 +11,4 @@ else
     echo "zsh is already installed."
 fi
 
-chsh=$(which zsh)
+chsh $(which zsh)
